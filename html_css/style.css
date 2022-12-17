@@ -1,0 +1,83 @@
+﻿p{
+    background-color: red;
+    color : yellow;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#idsecici {
+    background-color: green;
+}
+
+.classsecici{
+    background-color: blue;
+}
+
+.container{
+    background-color: turquoise;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1, h2, h3{
+    color:red;
+}
+
+div span{
+    color : red;
+}
+
+p>b, em{
+    color : blue;
+}
+
+div{
+    width: auto;
+    height:3cm
+}
+
+#margin{
+    height: 250px;
+    background-color: yellow;
+    padding-left: 30px;
+    padding-top: 55px;
+    margin: 10px, 20px, 30px, 40px;
+}
+
+#border{
+    height: 250px;
+    border: 10px solid red;
+    border-radius: 50px;
+}
+
+#outline{
+    height: 250px;
+    border: 10px solid red;
+    outline-offset: 15px;
+}
+
+#font{
+    font-size:30px;
+    font-style: italic;
+    font-weight: 1000;
+    line-height: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    white-space: pre-wrap;
+    text-transform: lowercase;
+    text-shadow: 15px, 15px, 15px, 15px;
+}
+
+#box{
+    /*border: 1px solid;
+    background-image: url(https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/udHvbKwV-IMG-Dubai-UAE-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 215px auto;*/
+
+    width: 250px;
+    height: 250px;
+    border: 10px solid red;;
+    background: radial-gradient(90deg, red, blue);
+}

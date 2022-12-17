@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS Bootcamp First Day</title>
+</head>
+<br>
+    <h1>Basic HTML</h1>
+    <!-- Yorum satırı -->
+
+    <!-- HTML web sayfaları oluşturmak için kullanılan bir 
+        işaretleme dilidir. -->
+
+    <!-- Auto save özelliği aktif olsun -->
+        
+    <!-- HTML'de en önemli konu aslında görüntü seviyeleridir. (Blok seviye
+        ve satır içi etiketler gibi)-->
+
+    <div>
+        Merhaba Dünya
+    </div>
+
+    
+    <!-- blok seviyesindeki elemanlar ekranın tamamını kapsar -->
+    <!-- en çok kullandığımız iki etiketten biri div diğeri span -->
+
+    
+    <!-- div ekranın tamamını kapsar ancak span sadece bulunduğu kısmı
+    kapsayacaktır.  -->
+
+    <!-- Tarayıcılarda bazı etiketler için default stiller tanımlıdır. -->
+
+    <span></span>
+
+    <h1>Başlık etiketi</h1>
+    <p>Paragraf etiketi</p>
+
+    <!-- Metin biçimlendirme etiketleri-->
+    <b> b etiketi içine aldığı yazıyı kalın yapar. </b>
+    <strong> b etiketi ile bir farkı yoktur. esas fark seo'dadır.</strong>
+    <br>
+    <mark>yazıyı vurgular</mark>
+    <br>
+    <small></small>
+    <u>yazının altı çizilir</u><br>
+    <br>    
+    <a href="https://github.com/muzafferbulut?tab=repositories", target="_blank">Github</a>
+    <br>
+    <br>
+    <img src="resim/dosya/yolu" alt="resmin üstüne gelince çıkan yazı">
+    
+    <!-- Tablo etiketi -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>CBS</th>
+                <th>Zeminİst</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ocak</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Şubat</td>
+                <td>7100</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- sıralı ve sırasız listeler -->
+
+    <ul type="square">
+        <li>CBS</li>
+        <li>HTML</li>
+        <li>JS</li>
+    </ul>
+
+    <ol>
+        <li>HTML</li>
+        <li>ORDERED</li>
+        <li>LIST</li>
+    </ol>
+
+    <!-- HTML'de div ve spandan sonra en önemli etiket form etkiketidir.  -->
+
+    <form action="form gönderildiğinde ne olacak?", method="post">
+        <label for="">Kullanıcı Adı : </label>
+        <input name="username" type="text" placeholder="Username", autocomplete="off"><br>
+        <br>
+        <label for="">Parola : </label>
+        <input name="pass" type="password" placeholder="****", required>
+        <br>
+        <br>
+        <label for="">Email Adresiniz : </label>
+        <input type="email" required>
+        <br>
+        <br>
+        <label for="">CV Gönder . </label>
+        <input type="file">
+        <br><br>
+
+        <label for="">Sözleşme Şartları</label>
+        <input type="checkbox", required>
+
+        <br><br>
+        <label for="">Cinsiyet : </label>
+        <input type="radio" name="cinsiyet"> Erkek
+        <input type="radio" name="cinsiyet"> Kadın
+
+        <br><br>
+        <label for="">Tarih : </label>
+        <input type="date">
+
+        <br><br>
+        <label for="">Ay : </label>
+        <input type="month">
+
+        <br><br>
+        <label for="", min="0", max="50">Sayı : </label>
+        <input type="number">
+
+        <br><br>
+        <label for="">Aralık : </label>
+        <input type="number", min="50",max='100', step="5">
+
+        <br><br>
+        <label for="">Aralık : </label>
+        <input type="range", min="50",max='100', step="5">
+
+        <br><br>
+        <label for="">Search : </label>
+        <input type="search">
+
+        <br><br>
+        <label for="">Select : </label>
+        <select name="dil" id="diller">
+            <option value="1">Türkçe</option>
+            <option value="2">İngilizce</option>
+        </select>    
+
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+</body>
+</html>
