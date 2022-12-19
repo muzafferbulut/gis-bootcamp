@@ -29,8 +29,19 @@
     border: 1px solid red
 }
 
+h1{
+  font-family:"Helvetica";
+  text-align: center;
+}
+
+hr{
+  width: 30%;
+}
 
 .nav-button {
+  width: 150px;
+  margin: 20px;
+  margin-left: 50px;
   align-items: center;
   background-color: #0A66C2;
   border: 0;
