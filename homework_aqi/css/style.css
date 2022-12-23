@@ -66,12 +66,12 @@ h1{
 h2{
   margin-bottom: 30px;
   margin-left: 10px;
-  font-size: 20px
+  font-size: 30px
 }
 
 select, option{
-  width: 50%;
-  height: 30px;
+  width: 400px;
+  height: 50px;
   margin-left: 30px;
 }
 
@@ -79,3 +79,18 @@ hr{
   width: 30%;
   color: brown;
 }
+
+#station-info{
+  width: 400px;
+  height: 350px;
+  background-color: rgb(221, 221, 228);
+  margin-bottom: 30px;
+  margin-left: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+h3{
+  font-size: 20px;
+}
+
