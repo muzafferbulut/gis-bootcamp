@@ -53,13 +53,57 @@ fetch('https://api.ibb.gov.tr/havakalitesi/OpenDataPortalHandler/GetAQIStations'
       <h3>Latitude : </h3> ${stationLat}<br>`;
 
       map.setView([stationLat, stationLng], 15);
-
     });
 
+    // buton seçilen istastondan bir ileri ya da bir geri hareketi sağlayacak
 
-  
+    const prevButton = document.getElementById('p-button');
+    const nextButton = document.getElementById('n-button');
+
+    let currentOption = 0;
+
+    prevButton.addEventListener('click', function() {
+      currentOption--;
+      if (currentOption < 0) {
+        currentOption = selectElement.options.length - 1;
+      }
+      console.log(currentOption);
+      showCurrentOption();
+    });
+
+    nextButton.addEventListener('click', function() {
+      currentOption++;
+      if (currentOption > selectElement.options.length - 1){
+        currentOption = 0;
+      }
+
+      console.log(currentOption);
+
+      showCurrentOption();
+    });
+
+    function showCurrentOption() {
+      console.log(selectElement);
+      selectElement.selectedIndex = currentOption;
+      const selectedId = selectElement.value;
+      
+      const selectedStation = data.find(station => station.Id === selectedId);
+
+      const selectedStationLoc = selectedStation.Location;
+      const stationLocParts = selectedStationLoc.match(/\((.*)\)/)[1].split(' ');
+      const stationLng = stationLocParts[0];
+      const stationLat = stationLocParts[1];
+
+      const stationDiv = document.getElementById("station-info");
+      stationDiv.innerHTML = `<h3>Station Name : </h3> ${selectedStation.Name}<br>
+      <h3>Station Address : </h3> ${selectedStation.Adress}<br>
+      <h3>Longitude : </h3> ${stationLng}<br>
+      <h3>Latitude : </h3> ${stationLat}<br>`;
+
+      map.setView([stationLat, stationLng], 15);
+    }
 
   })
 .catch(error => {
-    console.error('Hata:', error);
+  console.error('Hata:', error);
 });

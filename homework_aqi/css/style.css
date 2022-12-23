@@ -60,7 +60,7 @@
 h1{
   text-align: center;
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 h2{
@@ -83,14 +83,18 @@ hr{
 #station-info{
   width: 400px;
   height: 350px;
-  background-color: rgb(221, 221, 228);
+  background-color: antiquewhite;
   margin-bottom: 30px;
   margin-left: 30px;
   font-size: 20px;
   margin-top: 20px;
 }
 
-h3{
+h3 {
   font-size: 20px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #187a39, #11613a);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-
