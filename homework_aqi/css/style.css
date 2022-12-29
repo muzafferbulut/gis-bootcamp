@@ -74,7 +74,9 @@ h2{
 select, option{
   width: 400px;
   height: 30px;
+  border: 1px solid #18ab29;;
   margin-left: 30px;
+  font-size : 25px
 }
 
 hr{

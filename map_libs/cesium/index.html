@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fatih 3D</title>
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.100/Build/Cesium/Cesium.js"></script>
+    <link
+      href="https://cesium.com/downloads/cesiumjs/releases/1.100/Build/Cesium/Widgets/widgets.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="cesiumContainer"></div>
+
+    <div id="sidebar">
+      <div class="menu">
+        <li class="item" id="mn1">
+          <a class="btn" href="#mn1">Altlık Haritalar</a>
+          <div class="submenu">
+            <a href="#" id="mapbox">Mapbox</a>
+            <a href="#" id="esri">Esri</a>
+          </div>
+        </li>
+        <li class="item" id="mn2">
+          <a class="btn" href="#mn2">Önemli Yerler</a>
+          <div class="submenu">
+            <a href="#" id="sultanahmet">Sultan Ahmet Camii</a>
+            <a href="#" id="ayasofya">Ayasafoya Camii</a>
+            <a href="#" id="topkapi">Topkapı Sarayı</a>
+          </div>
+        </li>
+        <li class="item" id="mn3">
+          <a class="btn" href="#mn3">Modeller</a>
+          <div class="submenu">
+            <a href="#" id="lod1">Lod1</a>
+            <a href="#" id="osm">OSM</a>
+            <a href="#" id="bim">BIM</a>
+            <a href="#" id="mesh">Mesh</a>
+          </div>
+        </li>
+      </div>
+    </div>
+    <div id="style">
+      <div class="colorTypeContainer">
+        <label for="style">Tek renk</label>
+        <input
+          type="radio"
+          name="style"
+          id="singleColor"
+          value="1"
+          onchange="getRadioType();"
+        />
+
+        <label for="style">Çoklu Renk</label>
+        <input
+          type="radio"
+          name="style"
+          id="multiColor"
+          value="2"
+          onchange="getRadioType();"
+        />
+      </div>
+      <div id="styleBodyContainer"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

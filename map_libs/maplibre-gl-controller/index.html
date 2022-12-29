@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maplibre GL Controller - GISBootcamp</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="stylesheet" href="controller.css" />
+		<script
+			defer
+			src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"
+		></script>
+		<script src="data.js" defer></script>
+		<script src="controller.js" defer></script>
+		<link
+			href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="info">
+			Haritayı döndürmek için farenin sağ tuşuna<br />basılı tutarak fareyi
+			hareket ettirin
+		</div>
+		<div id="map"></div>
+		<div id="btn-rotate" class="hide">
+			<div id="arrow">∧</div>
+		</div>
+		<div id="layer-checkbox" class="layer-checkbox hide">
+			<input
+				type="checkbox"
+				id="geojsonLayer"
+				name="geojsonLayer"
+				value="geojsonLayer"
+			/>
+			<label for="geojsonLayer"> Geojson Layer</label>
+		</div>
+	</body>
+</html>
